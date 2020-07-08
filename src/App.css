@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
-}
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appBody{
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 3px 6px #d6d6d6;
+  width: 16rem;
+  height: 16rem;
+  font-size: 1vw;
+  margin: 2%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.card img{
+  border-radius: 50%;
+}
+.name{
+  font-size: 2rem;
+  font-family: sans-serif;
+
+}
+.email{
+  color: #797979;
+  font-size: 1rem;
+}
+.header{
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:  0px 1px 8px #888888;
+ 
+}
+.header span{
+  font-weight: bolder;
+  margin-left: 10%;
+}
+.search{
+  width: 40%;
+  /* background-color: cadetblue; */
+  text-align: center;
+  padding: 5px;
+}
+.search input{
+  
+  width: 90%;
+  border-radius: 5%;
+  border: 1px solid white;
+  height: 1.5rem;
+  background-color: rgb(233, 233, 233);
+  padding-left: 2%;
+ 
+
+  outline: none;
+}
+.search input:hover{
+  border:1px solid rgb(179, 179, 179);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  
+}
+.search input:focus{
+  border:1px solid rgb(129, 129, 129);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+.more{
+  margin: 2%;
+}
+.more button{
+  width: 8rem;
+  height: 2rem;
+  background-color: black;
   color: white;
+  border-radius: 10px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+}
+.more button:active{
+  transform: scale(0.9);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
